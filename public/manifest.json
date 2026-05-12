@@ -1,0 +1,16 @@
+{
+  "background_color": "#0a0a0a",
+  "description": "Senior SDE - Web (Frontend) Portfolio",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "any",
+      "src": "/favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sayantan Rudra - Portfolio",
+  "short_name": "Sayantan Rudra",
+  "start_url": "/",
+  "theme_color": "#2563eb"
+}

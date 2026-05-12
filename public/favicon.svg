@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <polygon points="55,6 102,31 102,79 55,104 8,79 8,31" fill="url(#faviconGradient)" opacity="0.12"/>
+  <polygon points="55,6 102,31 102,79 55,104 8,79 8,31" fill="none" stroke="url(#faviconGradient)" stroke-width="1.5"/>
+  <text x="22" y="70" font-family="Georgia,serif" font-size="40" font-weight="700" fill="url(#faviconGradient)">S</text>
+  <text x="57" y="70" font-family="Georgia,serif" font-size="40" font-weight="700" fill="white" opacity="0.85">R</text>
+</svg>
