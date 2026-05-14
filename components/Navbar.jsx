@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="shrink-0">
             <Link href="/" className="flex items-center gap-2 text-foreground">
-              <img src="/logo.svg" alt="Sayantan Rudra" className="h-8 w-auto" />
+              <img src={process.env.NEXT_PUBLIC_ASSET_PREFIX + "/logo.svg"} alt="Sayantan Rudra" className="h-8 w-auto" />
             </Link>
           </div>
 
