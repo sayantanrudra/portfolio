@@ -65,7 +65,7 @@ export default function About() {
           {/* Left Column - Image */}
           <motion.div variants={itemVariants} className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden">
-              <img src="/images/sayantan_rudra_dp.jpeg" alt="Sayantan Rudra" className="w-full h-full object-cover" />
+              <img src={process.env.NEXT_PUBLIC_ASSET_PREFIX + "/images/sayantan_rudra_dp.jpeg"} alt="Sayantan Rudra" className="w-full h-full object-cover" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />

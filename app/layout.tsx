@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: process.env.NEXT_PUBLIC_ASSET_PREFIX + '/favicon.svg',
+    apple: process.env.NEXT_PUBLIC_ASSET_PREFIX + '/favicon.svg',
   },
   other: {
     'application/ld+json': JSON.stringify({
