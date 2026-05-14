@@ -25,7 +25,7 @@ A professional, high-performance personal portfolio built with Next.js (App Rout
 ## 📁 Project structure
 
 ```
-portfolio26/
+portfolio/
 ├── app/
 │   ├── api/resume/route.ts # PDF download endpoint
 │   ├── layout.tsx          # Root layout, metadata, theme
@@ -44,6 +44,33 @@ portfolio26/
 
 ## 🚀 Getting Started
 
+### Local Development
+
+The project uses a `basePath` of **/portfolio**, so when running locally you need to prepend this path to URLs.
+
+```bash
+# Install dependencies (choose your package manager)
+npm install   # or yarn install / pnpm install
+
+# Run the development server
+npm run dev   # starts at http://localhost:3000/portfolio
+```
+
+Visit `http://localhost:3000/portfolio` in your browser to see the site.
+
+### Static Export
+
+For a fully static build (e.g., for Netlify or GitHub Pages):
+
+```bash
+npm run build   # generates an export in the .next folder
+npm run start   # serves the static export locally
+```
+
+The exported site will also be served under the `/portfolio` base path.
+
+## 🚀 Getting Started
+
 ### Prerequisites
 
 - Node.js 18+ installed
@@ -52,12 +79,14 @@ portfolio26/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/sayantanrudra/portfolio26.git
-cd portfolio26
+git clone https://github.com/sayantanrudra/portfolio.git
+cd portfolio
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -66,7 +95,8 @@ yarn install
 pnpm install
 ```
 
-3. Run the development server:
+1. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -75,7 +105,7 @@ yarn dev
 pnpm dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+1. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 📝 Customization
 
@@ -93,6 +123,7 @@ Edit the following files to customize the portfolio:
 ### Update Metadata
 
 Edit `app/layout.tsx` to update:
+
 - Site title and description
 - SEO metadata
 - Open Graph tags
@@ -119,6 +150,7 @@ The contact section uses mail and social links (`components/Contact.jsx`); there
 ### Other Platforms
 
 The site can be deployed to any platform that supports Next.js:
+
 - Netlify
 - AWS Amplify
 - DigitalOcean App Platform
@@ -172,9 +204,10 @@ This project is open source and available under the MIT License.
 ## 👤 Author
 
 **Sayantan Rudra**
+
 - LinkedIn: [linkedin.com/in/sayantanrudra](https://linkedin.com/in/sayantanrudra)
 - GitHub: [github.com/sayantanrudra](https://github.com/sayantanrudra)
-- Email: sayantanrud@gmail.com
+- Email: [sayantanrud@gmail.com](mailto:sayantanrud@gmail.com)
 
 ## 🙏 Acknowledgments
 

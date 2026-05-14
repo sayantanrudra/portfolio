@@ -93,15 +93,10 @@ export default function Hero() {
               View Work
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <Link href="/api/resume" passHref legacyBehavior>
-                <a
-              href="/api/resume"
-              download="Sayantan_Rudra_Resume.pdf"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-foreground bg-secondary rounded-lg hover:bg-secondary/80 transition-all duration-200"
-            >
+            <Link href="/api/resume" download="Sayantan_Rudra_Resume.pdf" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-foreground bg-secondary rounded-lg hover:bg-secondary/80 transition-all duration-200">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
-            </a></Link>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>
