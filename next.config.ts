@@ -20,20 +20,7 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-// import type { NextConfig } from "next";
-
-// const nextConfig: NextConfig = {
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: '**',
-//       },
-//     ],
-//   },
-//   experimental: {
-//     optimizePackageImports: ['lucide-react'],
-//   },
-// };
-
-// export default nextConfig;
+// Add env variable for asset prefix
+nextConfig.env = {
+  NEXT_PUBLIC_ASSET_PREFIX: process.env.NODE_ENV === "production" ? "/portfolio" : "",
+};
