@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
-import Link from 'next/link';
 
 export default function Hero() {
+  const resumeUrl = `${process.env.NEXT_PUBLIC_ASSET_PREFIX || ''}/Sayantan_Rudra_Resume.pdf`;
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -88,15 +88,19 @@ export default function Hero() {
             <button
               type="button"
               onClick={scrollToProjects}
-              className="group inline-flex items-center justify-center px-6 py-3 text-base font-medium text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-all duration-200 cursor-pointer"
+              className="group inline-flex items-center justify-center px-6 py-3 text-base font-medium text-primary-foreground bg-primary rounded-lg transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:scale-[1.02] hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25"
             >
               View Work
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <Link href="/api/resume" download="Sayantan_Rudra_Resume.pdf" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-foreground bg-secondary rounded-lg hover:bg-secondary/80 transition-all duration-200">
-              <Download className="mr-2 h-4 w-4" />
+            <a
+              href={resumeUrl}
+              download="Sayantan_Rudra_Resume.pdf"
+              className="group inline-flex items-center justify-center px-6 py-3 text-base font-medium text-foreground bg-card border border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary/50 hover:bg-card hover:shadow-lg hover:shadow-primary/15"
+            >
+              <Download className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
               Download Resume
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </motion.div>

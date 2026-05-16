@@ -27,13 +27,14 @@ A professional, high-performance personal portfolio built with Next.js (App Rout
 ```
 portfolio/
 ├── app/
-│   ├── api/resume/route.ts # PDF download endpoint
 │   ├── layout.tsx          # Root layout, metadata, theme
 │   ├── page.tsx            # Landing page
-│   ├── resume/             # Printable resume page + PDF asset
+│   ├── resume/             # Resume PDF source asset
 │   ├── globals.css
 │   ├── sitemap.ts
 │   └── robots.ts
+├── scripts/
+│   └── sync-resume.mjs     # Copies app/resume PDF to public before dev/build
 ├── components/             # Section components (JSX)
 ├── public/
 │   ├── images/
