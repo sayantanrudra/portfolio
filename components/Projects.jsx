@@ -85,10 +85,12 @@ export default function Projects() {
               <motion.div
                 key={index}
                 variants={itemVariants}
+                whileHover={{ y: -8, scale: 1.01 }}
                 className={`group relative bg-card rounded-xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 ${
                   project.featured ? 'md:col-span-2 lg:col-span-2' : ''
                 }`}
               >
+                <div className="pointer-events-none absolute inset-0 rounded-xl bg-linear-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute top-4 right-4 z-10">
@@ -99,9 +101,9 @@ export default function Projects() {
                 )}
 
                 {/* Content */}
-                <div className="p-6 space-y-4">
+                <div className="p-6 space-y-4 transition-transform duration-300 group-hover:-translate-y-0.5">
                   {/* Title */}
-                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-foreground">
                     {project.title}
                   </h3>
 
@@ -165,10 +167,10 @@ export default function Projects() {
               href="https://github.com/sayantanrudra"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 text-base font-medium text-foreground bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-300"
+              className="group inline-flex items-center gap-2 px-6 py-3 text-base font-medium text-foreground bg-card border border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary/50 hover:shadow-lg hover:shadow-primary/15"
             >
               View More on GitHub
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </motion.div>
         </motion.div>
